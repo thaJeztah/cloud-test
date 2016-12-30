@@ -1,0 +1,6 @@
+FROM busybox:1.26
+ARG SOME_ARG
+ENV SOME_ENV=$SOME_ARG
+RUN echo "SOME_ARG value: $SOME_ARG"
+RUN echo "SOME_ENV value: $SOME_ENV"
+
